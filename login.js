@@ -7,7 +7,7 @@ form.addEventListener('submit', async (e) => {
     const password = document.getElementById('password').value;
 
     try {
-        const response = await fetch('http://localhost:8000/api/login/', {
+        const response = await fetch('https://webformbackend-8.onrender.com/api/login/', {
             method: 'POST',
             body: formData,
           

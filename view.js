@@ -3,7 +3,7 @@ if (!token) {
     window.location.href = 'login.html';
 }
 
-fetch('http://localhost:8000/api/view/', {
+fetch('https://webformbackend-8.onrender.com/api/view/', {
     method: 'GET',
     headers: {
         'Authorization': `Token ${token}`,
@@ -23,9 +23,9 @@ fetch('http://localhost:8000/api/view/', {
                 <p>${user.dob}</p>
                 <p>${user.state}, ${user.country}</p>
             </div>
-        ;//localhost:8000${user.image}" alt="${user.first_name} ${user.last_name}">
+        ;//webformbackend-8.onrender.com/${user.image}" alt="${user.first_name} ${user.last_name}">
                 <video controls>
-                <source src="http://localhost:8000${user.video}" type="video/mp4">
+                <source src="https://webformbackend-8.onrender.com/${user.video}" type="video/mp4">
                 </video>
                 <p>${user.first_name} ${user.last_name}</p>
                 <p>${user.dob}</p>
